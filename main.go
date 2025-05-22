@@ -14,6 +14,10 @@ type SleepRecord struct {
     Duration   float64   // Durasi tidur (dalam jam)
     Quality    string    // Kualitas tidur
 }
+
+// Slice untuk menyimpan semua riwayat tidur
+var sleepRecords []SleepRecord
+
 // Fungsi untuk menampilkan menu utama
 func displayMenu() {
     fmt.Println("=== APLIKASI PEMANTAUAN TIDUR ===")
